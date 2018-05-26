@@ -1,5 +1,8 @@
 # duration-to-seconds
 
+[![npm version](https://img.shields.io/npm/v/duration-to-seconds.svg?style=flat-square)](https://www.npmjs.com/package/duration-to-seconds)
+[![Build Status](https://travis-ci.com/rtomrud/duration-to-seconds.svg?branch=master)](https://travis-ci.com/rtomrud/duration-to-seconds)
+
 Converts an [ISO 8601] duration to seconds
 
 ## Installing
