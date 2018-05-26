@@ -1,0 +1,66 @@
+{
+  "name": "duration-to-seconds",
+  "version": "0.1.0",
+  "description": "Converts an ISO 8601 duration to seconds",
+  "keywords": [
+    "conversion",
+    "date",
+    "duration",
+    "ISO",
+    "ISO 8601",
+    "time",
+    "units"
+  ],
+  "homepage": "https://github.com/rtomrud/duration-to-seconds#readme",
+  "bugs": {
+    "url": "https://github.com/rtomrud/duration-to-seconds/issues"
+  },
+  "license": "MIT",
+  "author": "Artem Rudenko <rtomrud@gmail.com>",
+  "files": [
+    "index.js"
+  ],
+  "main": "index.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rtomrud/duration-to-seconds.git"
+  },
+  "scripts": {
+    "cov": "nyc --reporter html tape -r esm index.test.js",
+    "test": "nyc --silent tape -r esm index.test.js | faucet && nyc check-coverage --statements 100 --branches 100 --functions 100 --lines 100",
+    "posttest": "eslint *.js"
+  },
+  "devDependencies": {
+    "eslint": "^4.19.1",
+    "eslint-config-pretty-strict": "^1.0.0-rc.7",
+    "eslint-plugin-prettier": "^2.6.0",
+    "esm": "^3.0.38",
+    "faucet": "0.0.1",
+    "husky": "^0.15.0-rc.8",
+    "nyc": "^11.8.0",
+    "prettier": "1.12.1",
+    "tape": "^4.9.0"
+  },
+  "engines": {
+    "node": ">=10"
+  },
+  "eslintConfig": {
+    "extends": [
+      "./node_modules/eslint-config-pretty-strict/index.js"
+    ],
+    "parserOptions": {
+      "ecmaVersion": 2018,
+      "sourceType": "module"
+    },
+    "root": true
+  },
+  "esm": {
+    "cjs": true,
+    "mode": "auto"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "npm test"
+    }
+  }
+}
