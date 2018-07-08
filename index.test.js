@@ -113,3 +113,19 @@ test("duration-to-seconds with a component with fractional part", ({
   equal(durationToSeconds("PT0.001S"), 0.001);
   end();
 });
+
+test("duration-to-seconds with a component with fractional part and one without", ({
+  equal,
+  end
+}) => {
+  equal(durationToSeconds("P1Y1.5D"), 365 * 24 * 60 * 60 + 24 * 60 * 60 * 1.5);
+  equal(durationToSeconds("P1M1.5D"), 30 * 24 * 60 * 60 + 24 * 60 * 60 * 1.5);
+  equal(durationToSeconds("P1DT1.5H"), 24 * 60 * 60 + 60 * 60 * 1.5);
+  equal(durationToSeconds("PT1H1.5M"), 60 * 60 + 60 * 1.5);
+  equal(durationToSeconds("PT1M1.5S"), 60 + 1.5);
+  equal(durationToSeconds("PT1M0.999S"), 60 + 0.999);
+  equal(durationToSeconds("PT1M0.100S"), 60 + 0.1);
+  equal(durationToSeconds("PT1M0.10S"), 60 + 0.1);
+  equal(durationToSeconds("PT1M0.1S"), 60 + 0.1);
+  end();
+});
