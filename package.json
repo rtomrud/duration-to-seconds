@@ -42,9 +42,6 @@
     "prettier": "1.13.7",
     "tape": "^4.9.1"
   },
-  "engines": {
-    "node": ">=10"
-  },
   "eslintConfig": {
     "extends": [
       "./node_modules/eslint-config-pretty-strict/index.js"
