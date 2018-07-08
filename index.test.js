@@ -1,10 +1,7 @@
 import test from "./node_modules/tape/index.js";
 import durationToSeconds from "./index.js";
 
-test("duration-to-seconds with valid non-strings arguments", ({
-  equal,
-  end
-}) => {
+test("duration-to-seconds with non-strings arguments", ({ equal, end }) => {
   equal(durationToSeconds(), 0);
   equal(durationToSeconds(NaN), 0);
   equal(durationToSeconds(0), 0);
@@ -40,10 +37,7 @@ test("duration-to-seconds with components that are 0", ({ equal, end }) => {
   end();
 });
 
-test("duration-to-seconds with durations without fractions", ({
-  equal,
-  end
-}) => {
+test("duration-to-seconds with one component", ({ equal, end }) => {
   equal(durationToSeconds("P1Y"), 365 * 24 * 60 * 60);
   equal(durationToSeconds("P1W"), 7 * 24 * 60 * 60);
   equal(durationToSeconds("P1M"), 30 * 24 * 60 * 60);
@@ -51,6 +45,10 @@ test("duration-to-seconds with durations without fractions", ({
   equal(durationToSeconds("PT1H"), 60 * 60);
   equal(durationToSeconds("PT1M"), 60);
   equal(durationToSeconds("PT1S"), 1);
+  end();
+});
+
+test("duration-to-seconds with many components", ({ equal, end }) => {
   equal(
     durationToSeconds("P2Y1M"),
     2 * 365 * 24 * 60 * 60 + 1 * 30 * 24 * 60 * 60
@@ -93,7 +91,10 @@ test("duration-to-seconds with durations without fractions", ({
   end();
 });
 
-test("duration-to-seconds with durations with fractions", ({ equal, end }) => {
+test("duration-to-seconds with a component with fractional part", ({
+  equal,
+  end
+}) => {
   equal(durationToSeconds("P1.5Y"), 365 * 24 * 60 * 60 * 1.5);
   equal(durationToSeconds("P1.5M"), 30 * 24 * 60 * 60 * 1.5);
   equal(durationToSeconds("P1.5W"), 7 * 24 * 60 * 60 * 1.5);
