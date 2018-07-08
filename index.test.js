@@ -89,7 +89,7 @@ test("duration-to-seconds with durations without fractions", ({
       365 * 24 * 60 * 60 + 30 * 24 * 60 * 60 + 24 * 60 * 60 + 60 * 60 + 60 + 1
     )
   );
-  equal(durationToSeconds("PT1H0M1S"), 1 * 60 * 60 + 1);
+  equal(durationToSeconds("PT1H0M1S"), 60 * 60 + 1);
   end();
 });
 
@@ -100,7 +100,7 @@ test("duration-to-seconds with durations with fractions", ({ equal, end }) => {
   equal(durationToSeconds("P1.5D"), 24 * 60 * 60 * 1.5);
   equal(durationToSeconds("PT1.5H"), 60 * 60 * 1.5);
   equal(durationToSeconds("PT1.5M"), 60 * 1.5);
-  equal(durationToSeconds("PT1.5S"), 1 * 1.5);
+  equal(durationToSeconds("PT1.5S"), 1.5);
   equal(durationToSeconds("PT0.999S"), 0.999);
   equal(durationToSeconds("PT0.100S"), 0.1);
   equal(durationToSeconds("PT0.10S"), 0.1);
