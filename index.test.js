@@ -6,7 +6,6 @@ test("duration-to-seconds with valid non-strings arguments", ({
   end
 }) => {
   equal(durationToSeconds(), 0);
-  equal(durationToSeconds(undefined), 0);
   equal(durationToSeconds(NaN), 0);
   equal(durationToSeconds(0), 0);
   equal(durationToSeconds(-0), 0);
