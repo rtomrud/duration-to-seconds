@@ -3,13 +3,14 @@
   "version": "1.0.0-beta.0",
   "description": "Converts an ISO 8601 duration to seconds",
   "keywords": [
-    "conversion",
+    "convert",
     "date",
     "duration",
     "ISO",
     "ISO 8601",
+    "seconds",
     "time",
-    "units"
+    "unit"
   ],
   "homepage": "https://github.com/rtomrud/duration-to-seconds#readme",
   "bugs": {
