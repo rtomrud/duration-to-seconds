@@ -12,7 +12,11 @@ Converts an [ISO 8601](http://xml.coverpages.org/ISO-FDIS-8601.pdf
 npm install duration-to-seconds
 ```
 
-## Using
+## API
+
+### `durationToSeconds(duration)`
+
+Converts the given ISO 8601 `duration` to seconds. A year ("Y") is regarded as 365 days. A month ("M") is regarded as 30 days. The behaviour is undefined when not given an ISO 8601 compliant string.
 
 ```js
 import durationToSeconds from "duration-to-seconds";
@@ -31,8 +35,8 @@ durationToSeconds("PT0.000001S"); // -> 0.000001
 
 ## Years and months
 
-- A year (`Y`) is considered to be equivalent to 365 days (ISO 8601 § 3.32)
-- A month (`M`) is considered to be equivalent to 30 days (ISO 8601 note on § 3.15)
+- A year ("Y") is considered to be equivalent to 365 days (ISO 8601 § 3.32)
+- A month ("M") is considered to be equivalent to 30 days (ISO 8601 note on § 3.15)
 
 ## Non ISO 8601 durations
 
