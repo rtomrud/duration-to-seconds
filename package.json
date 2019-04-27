@@ -60,8 +60,7 @@
     "dist"
   ],
   "esm": {
-    "cjs": true,
-    "mode": "auto"
+    "sourceMap": true
   },
   "husky": {
     "hooks": {
