@@ -2,6 +2,7 @@
 
 [![npm version](https://img.shields.io/npm/v/duration-to-seconds.svg?style=flat-square)](https://www.npmjs.com/package/duration-to-seconds)
 [![Build Status](https://travis-ci.com/rtomrud/duration-to-seconds.svg?branch=master)](https://travis-ci.com/rtomrud/duration-to-seconds)
+[![Coverage Status](https://coveralls.io/repos/github/rtomrud/duration-to-seconds/badge.svg?branch=master)](https://coveralls.io/github/rtomrud/duration-to-seconds?branch=master)
 
 Converts an [ISO 8601](http://xml.coverpages.org/ISO-FDIS-8601.pdf
 ) duration to seconds
