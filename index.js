@@ -1,4 +1,4 @@
-const durationRegExp = /P((\d+(\.\d+)?)Y)?((\d+(\.\d+)?)M)?((\d+(\.\d+)?)W)?((\d+(\.\d+)?)D)?(T((\d+(\.\d+)?)H)?((\d+(\.\d+)?)M)?((\d+(\.\d+)?)S)?)?/u;
+const durationRegExp = /P(?:(\d+(?:\.\d+)?)Y)?(?:(\d+(?:\.\d+)?)M)?(?:(\d+(?:\.\d+)?)W)?(?:(\d+(?:\.\d+)?)D)?(?:T(?:(\d+(?:\.\d+)?)H)?(?:(\d+(?:\.\d+)?)M)?(?:(\d+(?:\.\d+)?)S)?)?/u;
 
 /**
  * Converts the given ISO 8601 `duration` to seconds. A year ("Y") is regarded
@@ -12,26 +12,12 @@ export default function(duration = "") {
 
   const [
     ,
-    ,
     years = 0,
-    ,
-    ,
     months = 0,
-    ,
-    ,
     weeks = 0,
-    ,
-    ,
     days = 0,
-    ,
-    ,
-    ,
     hours = 0,
-    ,
-    ,
     minutes = 0,
-    ,
-    ,
     seconds = 0
   ] = durationRegExp.exec(duration) || [];
   return (
