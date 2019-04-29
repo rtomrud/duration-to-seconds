@@ -38,7 +38,7 @@
   "devDependencies": {
     "coveralls": "3.0.3",
     "eslint": "5.16.0",
-    "eslint-config-pretty-strict": "1.1.0",
+    "eslint-config-pretty-strict": "2.0.0",
     "eslint-plugin-prettier": "3.0.1",
     "esm": "3.2.22",
     "faucet": "0.0.1",
