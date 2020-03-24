@@ -12,7 +12,10 @@ test("duration-to-seconds with non-strings arguments", ({ equal, end }) => {
   equal(durationToSeconds(null), 0);
   equal(durationToSeconds({}), 0);
   equal(durationToSeconds([]), 0);
-  equal(durationToSeconds(() => {}), 0);
+  equal(
+    durationToSeconds(() => {}),
+    0
+  );
   end();
 });
 
