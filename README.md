@@ -35,15 +35,6 @@ durationToSeconds("PT0.001S"); // -> 0.001
 durationToSeconds("PT0.000001S"); // -> 0.000001
 ```
 
-#### Years and months
-
-- A year ("Y") is considered to be equivalent to 365 days, as per ISO 8601 § 3.32
-- A month ("M") is considered to be equivalent to 30 days, as per ISO 8601 note on § 3.15
-
-#### Invalid ISO 8601 durations
-
-When given anything that is not an ISO 8601 compliant duration, the behaviour is undefined. In other words, it does not validate that the given duration is a valid ISO 8601 duration.
-
 ## License
 
 [MIT](./LICENSE)
