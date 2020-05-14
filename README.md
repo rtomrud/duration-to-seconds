@@ -5,7 +5,7 @@
 [![bundle size](https://badgen.net/bundlephobia/minzip/duration-to-seconds)](https://bundlephobia.com/result?p=duration-to-seconds)
 
 Converts an [ISO 8601](http://xml.coverpages.org/ISO-FDIS-8601.pdf
-) duration to seconds
+) [duration](https://en.wikipedia.org/wiki/ISO_8601#Durations) to seconds
 
 ## Installing
 
