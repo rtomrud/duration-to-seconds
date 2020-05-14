@@ -1,6 +1,6 @@
 {
   "name": "duration-to-seconds",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Converts an ISO 8601 duration to seconds",
   "keywords": [
     "convert",
