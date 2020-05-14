@@ -1,7 +1,7 @@
 # duration-to-seconds
 
 [![npm version](https://img.shields.io/npm/v/duration-to-seconds.svg?style=flat-square)](https://www.npmjs.com/package/duration-to-seconds)
-[![Build Status](https://travis-ci.com/rtomrud/duration-to-seconds.svg?branch=master)](https://travis-ci.com/rtomrud/duration-to-seconds)
+[![build status](https://github.com/rtomrud/duration-to-seconds/workflows/build/badge.svg)](https://github.com/rtomrud/duration-to-seconds/actions?query=branch%3Amaster+workflow%3Abuild)
 [![Coverage Status](https://coveralls.io/repos/github/rtomrud/duration-to-seconds/badge.svg?branch=master)](https://coveralls.io/github/rtomrud/duration-to-seconds?branch=master)
 [![Code size](https://badgen.net/bundlephobia/minzip/duration-to-seconds)](https://bundlephobia.com/result?p=duration-to-seconds)
 
