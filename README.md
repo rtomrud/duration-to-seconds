@@ -2,7 +2,7 @@
 
 [![npm version](https://badgen.net/npm/v/duration-to-seconds)](https://www.npmjs.com/package/duration-to-seconds)
 [![build status](https://github.com/rtomrud/duration-to-seconds/workflows/build/badge.svg)](https://github.com/rtomrud/duration-to-seconds/actions?query=branch%3Amaster+workflow%3Abuild)
-[![Code size](https://badgen.net/bundlephobia/minzip/duration-to-seconds)](https://bundlephobia.com/result?p=duration-to-seconds)
+[![bundle size](https://badgen.net/bundlephobia/minzip/duration-to-seconds)](https://bundlephobia.com/result?p=duration-to-seconds)
 
 Converts an [ISO 8601](http://xml.coverpages.org/ISO-FDIS-8601.pdf
 ) duration to seconds
