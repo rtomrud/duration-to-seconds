@@ -5,7 +5,7 @@ const durationRegExp = /P(?:(\d+(?:\.\d+)?)Y)?(?:(\d+(?:\.\d+)?)M)?(?:(\d+(?:\.\
  * as 365 days. A month ("M") is regarded as 30 days. The behaviour is
  * undefined when not given an ISO 8601 compliant string.
  */
-export default function(duration = "") {
+export default function (duration = "") {
   if (typeof duration !== "string") {
     return 0;
   }
@@ -18,7 +18,7 @@ export default function(duration = "") {
     days = 0,
     hours = 0,
     minutes = 0,
-    seconds = 0
+    seconds = 0,
   ] = durationRegExp.exec(duration) || [];
   return (
     years * 31536000 +

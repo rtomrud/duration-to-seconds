@@ -85,10 +85,8 @@ test("duration-to-seconds with many components", ({ equal, end }) => {
       1
   );
   equal(
-    equal(
-      durationToSeconds("P1Y1M1DT1H1M1S"),
-      365 * 24 * 60 * 60 + 30 * 24 * 60 * 60 + 24 * 60 * 60 + 60 * 60 + 60 + 1
-    )
+    durationToSeconds("P1Y1M1DT1H1M1S"),
+    365 * 24 * 60 * 60 + 30 * 24 * 60 * 60 + 24 * 60 * 60 + 60 * 60 + 60 + 1
   );
   equal(durationToSeconds("PT1H0M1S"), 60 * 60 + 1);
   end();
@@ -96,7 +94,7 @@ test("duration-to-seconds with many components", ({ equal, end }) => {
 
 test("duration-to-seconds with a component with fractional part", ({
   equal,
-  end
+  end,
 }) => {
   equal(durationToSeconds("P1.5Y"), 365 * 24 * 60 * 60 * 1.5);
   equal(durationToSeconds("P1.5M"), 30 * 24 * 60 * 60 * 1.5);
@@ -119,7 +117,7 @@ test("duration-to-seconds with a component with fractional part", ({
 
 test("duration-to-seconds with a component with fractional part and one without", ({
   equal,
-  end
+  end,
 }) => {
   equal(durationToSeconds("P1Y1.5D"), 365 * 24 * 60 * 60 + 24 * 60 * 60 * 1.5);
   equal(durationToSeconds("P1M1.5D"), 30 * 24 * 60 * 60 + 24 * 60 * 60 * 1.5);
