@@ -22,16 +22,16 @@ Converts the given ISO 8601 `duration` to seconds. A year ("Y") is regarded as 3
 ```js
 import durationToSeconds from "duration-to-seconds";
 
-durationToSeconds("P1Y1M1DT1H1M1S"); // -> 34218061
-durationToSeconds("P1Y"); // -> 31536000
-durationToSeconds("P1M"); // -> 2592000
-durationToSeconds("P1W"); // -> 604800
-durationToSeconds("P1D"); // -> 86400
-durationToSeconds("PT1H"); // -> 3600
-durationToSeconds("PT1M"); // -> 60
-durationToSeconds("PT1S"); // -> 1
-durationToSeconds("PT0.001S"); // -> 0.001
-durationToSeconds("PT0.000001S"); // -> 0.000001
+durationToSeconds("PT0.001S"); // => 0.001
+durationToSeconds("PT0.000001S"); // => 0.000001
+durationToSeconds("PT1S"); // => 1
+durationToSeconds("PT1M"); // => 60
+durationToSeconds("PT1H"); // => 3600
+durationToSeconds("P1D"); // => 86400
+durationToSeconds("P1W"); // => 604800
+durationToSeconds("P1M"); // => 2592000
+durationToSeconds("P1Y"); // => 31536000
+durationToSeconds("P1Y1M1DT1H1M1S"); // => 34218061
 ```
 
 ## License
