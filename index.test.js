@@ -89,6 +89,11 @@ test("duration-to-seconds with many components", ({ equal, end }) => {
     365 * 24 * 60 * 60 + 30 * 24 * 60 * 60 + 24 * 60 * 60 + 60 * 60 + 60 + 1
   );
   equal(durationToSeconds("PT1H0M1S"), 60 * 60 + 1);
+  equal(
+    durationToSeconds("P1W1D"),
+    8 * 24 * 60 * 60,
+    "week and another component (not required by the standard)"
+  );
   end();
 });
 
