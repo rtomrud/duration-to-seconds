@@ -1,6 +1,6 @@
 # duration-to-seconds
 
-[![build status](https://github.com/rtomrud/duration-to-seconds/workflows/build/badge.svg)](https://github.com/rtomrud/duration-to-seconds/actions?query=branch%3Amaster+workflow%3Abuild)
+[![build status](https://github.com/rtomrud/duration-to-seconds/workflows/ci/badge.svg)](https://github.com/rtomrud/duration-to-seconds/actions?query=branch%3Amaster+workflow%3Aci)
 [![npm version](https://badgen.net/npm/v/duration-to-seconds)](https://www.npmjs.com/package/duration-to-seconds)
 [![bundle size](https://badgen.net/bundlephobia/minzip/duration-to-seconds)](https://bundlephobia.com/result?p=duration-to-seconds)
 
