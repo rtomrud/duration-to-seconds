@@ -33,7 +33,3 @@ durationToSeconds("P1M"); // => 2592000
 durationToSeconds("P1Y"); // => 31536000
 durationToSeconds("P1Y1M1DT1H1M1S"); // => 34218061
 ```
-
-## License
-
-[MIT](./LICENSE)
