@@ -67,3 +67,22 @@ test("duration-to-seconds with many components", () => {
   expect(durationToSeconds("PT1H0M1S")).toBe(60 * 60 + 1);
   expect(durationToSeconds("P1W1D")).toBe(8 * 24 * 60 * 60);
 });
+
+test("duration-to-seconds with a full stop as the decimal sign", () => {
+  expect(durationToSeconds("PT1.5S")).toBe(1.5);
+  expect(durationToSeconds("PT0.5H")).toBe(30 * 60);
+  expect(durationToSeconds("P0.5D")).toBe(12 * 60 * 60);
+  expect(durationToSeconds("P1DT1.5S")).toBe(24 * 60 * 60 + 1.5);
+});
+
+test("duration-to-seconds with a comma as the decimal sign", () => {
+  expect(durationToSeconds("PT1,5S")).toBe(1.5);
+  expect(durationToSeconds("PT0,5H")).toBe(30 * 60);
+  expect(durationToSeconds("PT0,5M")).toBe(30);
+  expect(durationToSeconds("P0,5D")).toBe(12 * 60 * 60);
+  expect(durationToSeconds("P0,5W")).toBe(3.5 * 24 * 60 * 60);
+  expect(durationToSeconds("P0,5M")).toBe(15 * 24 * 60 * 60);
+  expect(durationToSeconds("P0,5Y")).toBe(182.5 * 24 * 60 * 60);
+  expect(durationToSeconds("P1DT1,5S")).toBe(24 * 60 * 60 + 1.5);
+  expect(durationToSeconds("PT0,0S")).toBe(0);
+});

@@ -19,6 +19,7 @@ import durationToSeconds from "duration-to-seconds";
 
 durationToSeconds("PT0.001S"); // => 0.001
 durationToSeconds("PT0.000001S"); // => 0.000001
+durationToSeconds("PT1,5S"); // => 1.5
 durationToSeconds("PT1S"); // => 1
 durationToSeconds("PT1M"); // => 60
 durationToSeconds("PT1H"); // => 3600
